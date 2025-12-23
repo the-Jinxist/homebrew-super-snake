@@ -5,20 +5,20 @@
 class SuperSnake < Formula
   desc "Play Snake Xenzia in your terminal"
   homepage "https://github.com/the-Jinxist/golang_snake_game"
-  version "1.0.1"
+  version "1.0.2"
 
   on_macos do
     on_intel do
-      url "https://github.com/the-Jinxist/golang_snake_game/releases/download/v1.0.1/golang_snake_game_Darwin_x86_64.tar.gz"
-      sha256 "a8e283442d4639b70cb052fe03df8c460fc82747247e7534a44b33a07caccaf8"
+      url "https://github.com/the-Jinxist/golang_snake_game/releases/download/v1.0.2/golang_snake_game_Darwin_x86_64.tar.gz"
+      sha256 "7973979893cd67a4079da95633bccc07d07151fbd4794f2004d120fc161be494"
 
       def install
         bin.install "golang_snake_game"
       end
     end
     on_arm do
-      url "https://github.com/the-Jinxist/golang_snake_game/releases/download/v1.0.1/golang_snake_game_Darwin_arm64.tar.gz"
-      sha256 "a77e0a38d076488a023af15ab5eaaa8c4d7ef55f4992e075421df2f6b51c2cad"
+      url "https://github.com/the-Jinxist/golang_snake_game/releases/download/v1.0.2/golang_snake_game_Darwin_arm64.tar.gz"
+      sha256 "1947ed8c608c642fbc96532a14070f94c4815bf87fad22443ca94da00198b5bb"
 
       def install
         bin.install "golang_snake_game"
@@ -29,8 +29,8 @@ class SuperSnake < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/the-Jinxist/golang_snake_game/releases/download/v1.0.1/golang_snake_game_Linux_x86_64.tar.gz"
-        sha256 "dab17b83acb1a9dbf89c29587b84f1ec1a06d21002ceb68ea461882957b77902"
+        url "https://github.com/the-Jinxist/golang_snake_game/releases/download/v1.0.2/golang_snake_game_Linux_x86_64.tar.gz"
+        sha256 "e0400054373d04cf1bfddc64a486897af0b2bcc92d23b8c9356b004f1ed0660d"
 
         def install
           bin.install "golang_snake_game"
@@ -39,8 +39,8 @@ class SuperSnake < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/the-Jinxist/golang_snake_game/releases/download/v1.0.1/golang_snake_game_Linux_arm64.tar.gz"
-        sha256 "74c2435f65f14a0ed58e0993f04525ad08922d0e07557a9ac6d74cfef9a6b5dc"
+        url "https://github.com/the-Jinxist/golang_snake_game/releases/download/v1.0.2/golang_snake_game_Linux_arm64.tar.gz"
+        sha256 "f4682837e00a8c434fe562202fd4debcb8fb1516f353c7569b8be58ef7319ed3"
 
         def install
           bin.install "golang_snake_game"
