@@ -5,20 +5,20 @@
 class SuperSnake < Formula
   desc "Play Snake Xenzia in your terminal"
   homepage "https://github.com/the-Jinxist/super_snake"
-  version "1.1.0"
+  version "1.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/the-Jinxist/super_snake/releases/download/v1.1.0/super_snake_Darwin_x86_64.tar.gz"
-      sha256 "ff29a682406fca3d45df1442a59d3eb245289535d9ffb050a37d73d7f5e4ac89"
+      url "https://github.com/the-Jinxist/super_snake/releases/download/v1.2.0/super_snake_Darwin_x86_64.tar.gz"
+      sha256 "4c409706f15924002e1ce4a2f98297e3c9fc135993d75fddf411253565499ed5"
 
       def install
         bin.install "super_snake"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/the-Jinxist/super_snake/releases/download/v1.1.0/super_snake_Darwin_arm64.tar.gz"
-      sha256 "25bccdfb202613ba0df744f74ab9c834e40b121652a72d17408a6e8816ed1821"
+      url "https://github.com/the-Jinxist/super_snake/releases/download/v1.2.0/super_snake_Darwin_arm64.tar.gz"
+      sha256 "e99a64e57f08fd82b4c26900468f52b9df8b9a4f43d88626aca9b6ed7b6e939e"
 
       def install
         bin.install "super_snake"
@@ -28,15 +28,15 @@ class SuperSnake < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/the-Jinxist/super_snake/releases/download/v1.1.0/super_snake_Linux_x86_64.tar.gz"
-      sha256 "6711755323aaceb1647e5c6e076f1db1cf9f8e9e2108f3c2550603f803ce9fad"
+      url "https://github.com/the-Jinxist/super_snake/releases/download/v1.2.0/super_snake_Linux_x86_64.tar.gz"
+      sha256 "ab4448121dc715c428c37fe5ec48e1b9131a11fcf5bf4447401db3d1715be7cf"
       def install
         bin.install "super_snake"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/the-Jinxist/super_snake/releases/download/v1.1.0/super_snake_Linux_arm64.tar.gz"
-      sha256 "d1aa43c8db621bf48bf75073ffa647353b4a63f3be54b088ddc7398baaef1420"
+      url "https://github.com/the-Jinxist/super_snake/releases/download/v1.2.0/super_snake_Linux_arm64.tar.gz"
+      sha256 "19e5e3ce6a8b2f1290ea969cf7ccf790ea133669b5dc4d6aa3b24379b557dda7"
       def install
         bin.install "super_snake"
       end
